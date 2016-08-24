@@ -220,6 +220,15 @@ a:active {
     /*outline: 1px solid red;*/
 }
 
+.blue-inline {
+    color: #0c36d4;
+    text-decoration: underline;
+}
+
+.p-line {
+    text-decoration: underline;
+}
+
 /*-------------------------------------------*/
 /* ----- PRELOAD ------ */
 /*-------------------------------------------*/
