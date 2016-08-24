@@ -24,14 +24,19 @@ $(document).ready(function() {
     var thumbsFor = 0;
     var marginTopIcon = 0;
 
+    setTimeout(function() {
 
-    for( thumbsFor = 0; thumbsFor <= thumbsCount - 1; ++thumbsFor) {
+        for( thumbsFor = 0; thumbsFor <= thumbsCount - 1; ++thumbsFor) {
 
-        marginTopIcon = ( $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").height() - $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").height() ) / 2;
+            marginTopIcon = ( $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").height() - $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").height() ) / 2;
 
-        $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").css({"padding-top" : marginTopIcon + "px" });
+            $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").css({"padding-top" : marginTopIcon + "px" });
 
-    }
+        }
+
+    }, 1000);
+
+
 
 
     $(".search-btn").click(function() {
