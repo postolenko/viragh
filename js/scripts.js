@@ -30,7 +30,7 @@ $(document).ready(function() {
 
             marginTopIcon = ( $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").height() - $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").height() ) / 2;
 
-            $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").css({"padding-top" : marginTopIcon + "px" });
+            $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").css({"top" : marginTopIcon + "px" });
 
         }
 
