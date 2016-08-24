@@ -34,7 +34,7 @@ $(document).ready(function() {
 
         }
 
-    }, 7000);
+    }, 1000);
 
 
 
