@@ -24,7 +24,7 @@ $(document).ready(function() {
     var thumbsFor = 0;
     var marginTopIcon = 0;
 
-    setTimeout(function() {
+    // setTimeout(function() {
 
         for( thumbsFor = 0; thumbsFor <= thumbsCount - 1; ++thumbsFor) {
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
         }
 
-    }, 7000);
+    // }, 7000);
 
 
 
