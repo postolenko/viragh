@@ -24,6 +24,27 @@ $(document).ready(function() {
     var thumbsFor = 0;
     var marginTopIcon = 0;
 
+
+    getSidebarSize();
+
+
+    $(window).resize(function() {
+
+        if( $(".wrapper").height() < $(window).height() ) {
+
+            $(".wrapper").css({"min-height" : $(window).height() + "px"});
+
+        }
+
+        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        
+        getSidebarSize();
+
+
+    });
+
+
     setTimeout(function() {
 
         for( thumbsFor = 0; thumbsFor <= thumbsCount - 1; ++thumbsFor) {
@@ -37,6 +58,38 @@ $(document).ready(function() {
     }, 1000);
 
 
+    if( $(".wrapper").height() < $(window).height() ) {
+
+        $(".wrapper").css({"min-height" : $(window).height() + "px"});
+
+    }
+
+    $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+
+    
+
+
+    // ----------------------------------------------
+
+
+        function getSidebarSize() {
+
+            // $(".content").css({"height" : $(".wrapper").height() - $(".header").height() - $(".footer").height() + "px"});
+
+            $(".sidebar").css({"height" : $(".content").height() + "px"});
+
+            $(".sidebar").append("<div class='left-background'></div>");
+
+            $(".left-background").width({"width" : $(".row").offset().left + "px"});
+
+            console.log( $(".content").height() );
+
+        }
+
+
+
+    // ----------------------------------------------
 
 
     $(".search-btn").click(function() {
