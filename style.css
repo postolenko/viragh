@@ -177,10 +177,6 @@ h1 {
     padding: 10px 0 15px 0;
 }
 
-button {
-
-}
-
 h2 {
     font-family: "Squares Bold", Verdana, Arial, sans-serif;
     font-size: 24px;
@@ -206,12 +202,37 @@ p {
     padding: 10px 0;
 }
 
+
+button {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    cursor: pointer;
+    background: rgba(27, 134, 180, 1);
+    border: 1px solid transparent;
+    font-family: "Helvetica_Neue_Cyr Roman", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 7px 2px;
+}
+
+
 li {
     list-style: none;
-}
+/*    font-family: "Helvetica_Neue_Cyr Roman", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2c2c2c;
+*/}
 
 a {
     text-decoration: none;
+/*    list-style: none;
+    font-family: "Helvetica_Neue_Cyr Roman", Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2c2c2c;*/
 }
 
 button:hover,

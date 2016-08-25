@@ -75,7 +75,7 @@ $(document).ready(function() {
 
         function getSidebarSize() {
 
-            // $(".content").css({"height" : $(".wrapper").height() - $(".header").height() - $(".footer").height() + "px"});
+            $(".content").css({"height" : $(".wrapper").height() - $(".header").height() - $(".footer").height() + "px"});
 
             $(".sidebar").css({"height" : $(".content").height() + "px"});
 
