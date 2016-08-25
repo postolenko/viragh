@@ -125,6 +125,31 @@ $(document).ready(function() {
 
 
 
+     var chekboxIndex;
+
+    $( ".chekbox-block" )
+
+    .mouseenter(function() {
+
+       chekboxIndex =  $( ".chekbox-block" ).index(this);
+
+       $( ".chekbox-block:eq("+ chekboxIndex +") .show-more" ).css({
+            "left" : $(".chekbox-block:eq("+ chekboxIndex +")").width() + 45 + "px"
+        });
+
+       // $( ".chekbox-block:eq("+ chekboxIndex +") .show-more" ).fadeIn(100);
+
+    })
+
+    .mouseleave(function() {
+
+        // $( ".chekbox-block:eq("+ chekboxIndex +") .show-more" ).fadeOut(100);
+
+    });
+
+
+
+
 		
 
 });
