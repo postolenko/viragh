@@ -95,6 +95,7 @@ body {
 
 .wrapper {
     min-height: 100%;
+    min-width: 100%;
     background: rgba(255, 255, 255, 1);
 }
 
@@ -103,6 +104,7 @@ body {
     position: relative;
     height: 100%;
     min-height: 100%;
+    min-width: 100%;
 }
 
 
@@ -907,6 +909,13 @@ section.header-menu-section {
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
 
+.main-page .main-content {
+    /*display: block;*/
+    width: 100%;
+    float: none;
+}
+
+
 .thumbnails-box {
     font-size: 0;
     line-height: 0;
@@ -1155,7 +1164,7 @@ section.header-menu-section {
 
         /* -- Sidebar -- */
 
-        .sidebar {
+       /* .sidebar {
             display: block;
             min-width: 230px;
             width: 20%;
@@ -1418,7 +1427,7 @@ section.header-menu-section {
 
         .volume .chekbox-block input[type=checkbox] + label {
             padding: 0 0 0 6px;
-        }
+        }*/
 
         /* -- /Sidebar -- */
 
