@@ -1196,7 +1196,6 @@ section.header-menu-section {
             padding: 13px 1% 0 1%;
             position: relative;
             z-index: 2;
-            outline: 1px solid red;
         }
 
         .sidebar .left-background {
