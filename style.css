@@ -1296,6 +1296,7 @@ section.header-menu-section {
             max-width: 15%;
             position: relative;
             z-index: 1;
+            opacity: .01;
         }
         
         .chekbox-block input[type=checkbox] + label {
