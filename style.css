@@ -1018,15 +1018,20 @@ section.header-menu-section {
     width: 230px;
     height: 230px;
     margin: 0 auto;
+    position: relative;
 }
 
 .icon img {
     display: block;
     max-width: 160px;
+    max-height: 210px;
     height: auto;
-    margin: 0 auto;
-    position: relative;
+    margin: auto;
+    position: absolute;
     top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .thumnail-name {

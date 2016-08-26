@@ -51,20 +51,6 @@ $(document).ready(function() {
     });
 
 
-    setTimeout(function() {
-
-        for( thumbsFor = 0; thumbsFor <= thumbsCount - 1; ++thumbsFor) {
-
-            marginTopIcon = ( $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon").height() - $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").height() ) / 2;
-
-            $(".thumbnail:eq("+ thumbsFor +") .icon-box .icon img").css({"top" : marginTopIcon + "px" });
-
-        }
-
-    }, 800);
-
-
-
     $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
     $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
