@@ -237,6 +237,11 @@ a {
     color: #2c2c2c;
 }
 
+img {
+    outline: none;
+    border: 1px solid transparent;
+}
+
 button:hover,
 button:active,
 a:hover,
