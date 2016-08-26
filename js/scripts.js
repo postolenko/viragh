@@ -18,6 +18,9 @@ $(document).ready(function() {
     var marginTopIcon = 0;
 
 
+
+    var sidebarHeightInterval;
+
     getSidebarSize();
 
 
@@ -73,9 +76,15 @@ $(document).ready(function() {
 
         function getSidebarSize() {
 
-            $(".sidebar").css({"height" : $(".content").height() + "px"});
+            clearInterval(sidebarHeightInterval);
 
-            $(".left-background").css({"width" : $(".row").offset().left + "px"});
+            sidebarHeightInterval = setTimeout(function() {
+
+                $(".sidebar").css({"height" : $(".content").height() + "px"});
+
+                $(".left-background").css({"width" : $(".row").offset().left + "px"});
+
+            }, 700);            
 
         }
 
