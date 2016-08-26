@@ -1196,6 +1196,7 @@ section.header-menu-section {
             padding: 13px 1% 0 1%;
             position: relative;
             z-index: 2;
+            outline: 1px solid red;
         }
 
         .sidebar .left-background {
@@ -1285,7 +1286,7 @@ section.header-menu-section {
             position: relative;
             font-size: 0;
             line-height: 0;
-            margin: 12px 0 8px 0;
+            margin: 12px 0 8px -14px;
         }
 
         .chekbox-block input {
@@ -1305,8 +1306,8 @@ section.header-menu-section {
             width: 85%;
              position: relative;
             z-index: 2;
-            padding: 0 0 0 11px;
-               font-size: 0;
+            padding: 0 0 0 25px;
+            font-size: 0;
             line-height: 0;
         }
 
@@ -1321,9 +1322,9 @@ section.header-menu-section {
             background-repeat: no-repeat;
             position: absolute;
             top: 0;
-            left: -14px;
+            left: 0;
             z-index: 2;
-            margin: 0 10px 0 0;
+            /*margin: 0 10px 0 0;*/
         }
 
         .chekbox-block input[type=checkbox]:checked  + label:before {
@@ -1441,16 +1442,18 @@ section.header-menu-section {
         .volume {
             font-size: 0;
             line-height: 0;
+            margin: 0 0 0 -2%;
         }
 
         .volume .chekbox-block {
             display: inline-block;
             vertical-align: top;
             width: 25%;
+            margin: 8px 0 5px -2px;
         }
 
         .volume .chekbox-block input[type=checkbox] + label {
-            padding: 0 0 0 6px;
+            padding: 0 0 0 20px;
         }
 
         /* -- /Sidebar -- */
